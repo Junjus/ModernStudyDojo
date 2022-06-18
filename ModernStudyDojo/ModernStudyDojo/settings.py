@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     #third party
 
     #own
-    'watch',
+    'watch.apps.WatchConfig',
 ]
 
 MIDDLEWARE = [
