@@ -1,13 +1,11 @@
-{% load static %}
-<!DOCTYPE html>
+<h3>Login</h3>
 
-<html>
-<head>
-  <title>Your Courses</title>
-</head>
+<form method="POST" action="">
+% csrf_token % 
+{{ form.as_p }}
 
-<body>
-<p> test</p>
- 
-</body>
-</html>
+
+
+<input type="submit" name="Create User"
+
+</form>
