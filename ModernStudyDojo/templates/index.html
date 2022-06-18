@@ -21,16 +21,15 @@
     </div>
     
     <div class="right-section">
-       <a class="header-text";   color: #000000;
-       text-decoration: none; href="{% url 'watch' %}"> Your Courses </a>
+       <a class="header-text";  href="{% url 'watch' %}"> Your Courses </a>
     </div>
 
     <div class="account">
             
-    <button class="button-account">Account</button>
+    <button class="button-account"> Account</button>
     
     <div class="dropdown-content">
-        <a href="https://blog.hubspot.com/">My Account</a>
+        <a href="{% url 'login' %}"> My Account</a>
         <a href="https://academy.hubspot.com/">Settings</a>
         <a href="https://www.youtube.com/user/hubspot">Log out</a>
     </div>

@@ -23,6 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('watch/', watch_views.watch, name='watch'),
     path('', watch_views.index),
+    path('login', watch_views.login, name='login') 
     
 ]
 
