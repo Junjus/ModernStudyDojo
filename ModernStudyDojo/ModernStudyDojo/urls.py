@@ -21,7 +21,7 @@ from watch import views as watch_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('watch/', watch_views.watch),
+    path('watch/', watch_views.watch, name='watch'),
     path('', watch_views.index),
     
 ]
