@@ -1,8 +1,4 @@
 
-.courses{
-  display:flex;
-  flex-direction: row;
-}
 
 .left{
   
@@ -14,7 +10,7 @@
 
 .main{
   display:flex;
-  flex-direction: column;
+  flex-direction: row;
   flex: 1;
   
   
@@ -28,7 +24,7 @@
   background-color: rgba(0, 214, 170, 0.85);
 }
 
-.unten{
+.right{
   flex: 1;
 }
 
