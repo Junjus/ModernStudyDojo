@@ -11,9 +11,6 @@ from . import utilities
 
 
 # Create your views here.
-<<<<<<< HEAD
-from .models import *
-=======
 def watch(request):
     video = models.Video.objects.all()
     return render(request, "watch.html", {"video": video})
@@ -43,7 +40,6 @@ def uploadVideo(request):
 
 def uploadedSuccessfully(request):
     return render(request, "uploadedSuccessfully.html", {})
->>>>>>> 52733e727ccda5fbcad1fd4f71100326b41b2cbe
 
 
 

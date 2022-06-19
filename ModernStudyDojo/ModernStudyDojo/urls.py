@@ -18,10 +18,6 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 
-<<<<<<< HEAD
-from watch import views as watch_views
-=======
->>>>>>> 52733e727ccda5fbcad1fd4f71100326b41b2cbe
 
 urlpatterns = [
     path('admin/', admin.site.urls),
