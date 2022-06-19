@@ -1,4 +1,42 @@
-<h3>Login</h3>
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="{% static 'styles/header.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'styles/general.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'styles/login.css' %}">
+</head>
+<body>
+  <div class="header">
+    <div class="left-section">
+        <p class="header-text">Skilltree </p>
+    </div>
+   
+   <div class="middle-section">
+       <p class="header-text">Forum </p>
+    </div>
+    
+    <div class="right-section">
+       <a class="header-text";  href="{% url 'watch' %}"> Your Courses </a>
+    </div>
+
+    <div class="account">
+    
+      <button class="account-button"> 
+          Account
+          <img class="profile-picture" src="static/images/profile-picture.jpg">
+      </button>
+    
+    <div class="dropdown-content">
+        <a href="{% url 'login' %}"> My Account</a>
+        <a href="https://academy.hubspot.com/">Settings</a>
+        <a href="https://www.youtube.com/user/hubspot">Log in</a>
+    </div>
+</div>   
+</div>
+
+  <h3>Login</h3>
 
 <form method="POST" action="">
 {% csrf_token %} 
@@ -14,3 +52,5 @@
     <input type="submit" name="Create User">    
 
 </form>
+</body>
+</html>

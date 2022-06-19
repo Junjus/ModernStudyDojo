@@ -1,0 +1,26 @@
+
+.courses{
+  display: flex;
+  flex-direction: column;
+}
+
+.main{
+  display:flex;
+  flex-direction: row;
+  flex: 1;
+  
+  
+}
+
+.left{
+  
+  background-color: rgb(119, 117, 117);
+  width: 200px;
+  
+  
+}
+
+.right{
+  flex: 1;
+}
+

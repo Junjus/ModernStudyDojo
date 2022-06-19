@@ -1,9 +1,12 @@
+from dataclasses import fields
 from django import forms
 
+from . import models
 
-class VideoForm(forms.Form):
-    title = forms.CharField(max_length=120)
-    file = forms.FileField()
-    #script = forms.FileField()
-    #exercieses = 
-    #comments = 
+class VideoForm(forms.ModelForm):
+    class Meta:
+        model = models.Video
+        fields = [
+            'title',
+            'video',
+        ]

@@ -5,7 +5,7 @@ from django.http import HttpResponseRedirect
 from django.contrib.auth.forms import UserCreationForm
 
 # Import Models
-from .forms import VideoForm
+from . import forms
 from . import models 
 from . import utilities
 
@@ -36,7 +36,15 @@ def uploadVideo(request):
     return render(request, "uploadVideo.html", {})
 """
 def uploadVideo(request):
-    return render(request, "uploadVideo.html", {})
+    form = forms.VideoForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+
+    context = {
+        'form': form
+    }
+
+    return render(request, "uploadVideo.html", context)
 
 def uploadedSuccessfully(request):
     return render(request, "uploadedSuccessfully.html", {})
