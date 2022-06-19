@@ -5,13 +5,13 @@
 <head>
     <title>ModernStudyDojo</title>
 
-    <link rel="stylesheet" type="text/css" href="{% static 'styles/courses-header.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'styles/general.css' %}">
+    <!--link rel="stylesheet" type="text/css" href="{% static 'styles/courses-header.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/general.css' %}"-->
     
 </head>
 
 <body>
-<div class="courses">
+<!--div class="courses">
     <div class="left">
         <p>left</p>
     </div>
@@ -25,7 +25,16 @@
             <p>unten</p>
         </div>
     </div>
-</div>
+</div-->
+    <div class="container">
+        {% for x in video %}
+            <h3 class="text-center mt-2 mb-2">{{x.title}}</h3>
+            <video class="emded-responsive emded-responsive-16by9" controls="controls" width="320" height="240">
+                <source src="{{x.video.url}}" type="video/mp4"/>
+            </video>
+        {% endfor %}
+    </div>
+
 </body>
 
 </html>
