@@ -12,33 +12,33 @@
 
 <body>
     <div class="header">
-
         <div class="left-section">
             <p class="header-text">Skilltree </p>
         </div>
-               
-        <div class="middle-section">
-            <p class="header-text">Forum </p>
+       
+       <div class="middle-section">
+           <p class="header-text">Forum </p>
         </div>
-                
+        
         <div class="right-section">
-            <a class="header-text";  href="{% url 'watch' %}"> Your Courses </a>
+           <a class="header-text";  href="{% url 'watch' %}"> Your Courses </a>
         </div>
-            
-        <div class="account">
     
+        <div class="account">
+            
             <button class="account-button"> 
                 Account
                 <img class="profile-picture" src="static/images/profile-picture.jpg">
             </button>
-                
+        
             <div class="dropdown-content">
                 <a href="{% url 'login' %}"> My Account</a>
                 <a href="https://academy.hubspot.com/">Settings</a>
-                <a href="https://www.youtube.com/user/hubspot">Log in</a>
+                <a href="{% url 'login' %}">Log in</a>
             </div>
-        </div>  
-    </div> 
+        </div>
+    </div>
+
     
     <div class="main">
         <div class="left">
@@ -46,18 +46,17 @@
         </div>      
     
         <div class="right"> <!-- hier kommt die video und Kommentarfunktion rein-->
-            <p>test</p>
-                
-        </div>  
-    </div>
-
-    <!--div class="container">
-        {% for x in video %}
-            <h3 class="text-center mt-2 mb-2">{{x.title}}</h3>
+            {% for x in video %}
+            <h3>{{x.title}}</h3>
             <video class="emded-responsive emded-responsive-16by9" controls="controls" width="320" height="240">
                 <source src="{{x.video.url}}" type="video/mp4"/>
             </video>
-        {% endfor %}
-    </div-->
+            {% endfor %}
+        </div>  
+    </div>
+
+    <div class="container">
+        
+    </div>
 </body>
 </html>
