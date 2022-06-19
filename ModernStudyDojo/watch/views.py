@@ -7,8 +7,6 @@ from django.contrib.auth.forms import UserCreationForm
 
 # Create your views here.
 from .models import *
-from .forms import OrderForm
-from .filters import OrderFilter
 
 
 def watch(request, *args, **kwargs):

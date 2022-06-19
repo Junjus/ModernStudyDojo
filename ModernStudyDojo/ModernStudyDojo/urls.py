@@ -17,7 +17,6 @@ from django import views
 from django.contrib import admin
 from django.urls import path
 
-from . import views
 from watch import views as watch_views
 
 urlpatterns = [
