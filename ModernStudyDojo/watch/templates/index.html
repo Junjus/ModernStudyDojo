@@ -35,7 +35,7 @@
     <div class="dropdown-content">
         <a href="{% url 'login' %}"> My Account</a>
         <a href="https://academy.hubspot.com/">Settings</a>
-        <a href="https://www.youtube.com/user/hubspot">Log out</a>
+        <a href="{% url 'login' %}">Login</a>
         <a href="http://localhost:8000/register/"> Register</a>
     </div>
 </div> 
@@ -58,7 +58,30 @@
     </p>
 </div>
 
-<div class="uebungen"> Hier stehen Uebungen die man weiter machen kann</div>
+<div class="uebungen"> 
+    <B class="start"> Continue courses:</B>
+    <table  border="1" class="courses" cellpadding="5" cellspacing="5">
+    <tr>
+    <th>Courses</th>
+    <th>hours left</th>
+    </tr>
+    <tr>
+    <td>Introduction to html</td>
+    <td>2,5</td>
+    </tr>
+    <tr>
+    <td>Python for beginners</td>
+    <td>0,3</td>
+    </tr>
+    <tr>
+    <td>Python: advanced</td>
+    <td>5</td>
+    </tr>
+    <tr>
+    <td>...</td>
+    <td>...</td>
+    </tr>
+    </table></div>
     
 <div class="rechts"> Bisher noch freier platz</div>
 

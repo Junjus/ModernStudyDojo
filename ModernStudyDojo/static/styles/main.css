@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:300,600");
 
 .main{
   display: flex;
   flex-direction: row;
+  height: 800px;
 }
 
 .kalender{
@@ -13,13 +15,32 @@
 
 .uebungen{
   display: flex;
+  flex-direction: column;
   flex: 1;
-  background-color: #000000;
+  background-color: #7a7676;
 }
 
+.start{
+  font-size: 30px;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-family:"Work Sans", sans-serif;
+
+}
+.courses{
+  font-family:"Work Sans", sans-serif;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.courses:hover{
+  opacity: 0.85;
+
+}
 .rechts{
   display: flex;
   flex: 1;
   background-color: #1da9c2;
+  font-family:"Work Sans", sans-serif;
 }
 
