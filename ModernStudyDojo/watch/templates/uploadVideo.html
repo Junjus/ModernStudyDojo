@@ -3,12 +3,15 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>Django Video File Upload</title>
-    </head>
-    <body>
-		<div class="container">
-
-		</div>	
-    </body>
+<head>
+  <title>Django Video File Upload</title>
+</head>
+<body>
+	<div class="container">
+    <form enctype="multipart/form-data">
+      {{form.as_p}}
+      <input type='submit' value='Save' />
+    </form>
+	</div>	
+</body>
 </html>
