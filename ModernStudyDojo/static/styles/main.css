@@ -22,14 +22,3 @@
   flex: 1;
   background-color: #1da9c2;
 }
-
-table {
-  border-collapse: collapse;
-  background: white;
-  color: black;
-}
-
-th,
-td {
-  font-weight: bold;
-}
