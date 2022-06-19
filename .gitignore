@@ -5,4 +5,5 @@ pyvenv.cfg
 db.sqlite3
 /ModernStudyDojo/watch/__pycache__
 /ModernStudyDojo/watch/migrations
+/ModernStudyDojo/media/
 /ModernStudyDojo/ModernStudyDojo/__pycache__

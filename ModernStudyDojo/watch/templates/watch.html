@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ModernStudyDojo</title>
+
+    <!--link rel="stylesheet" type="text/css" href="{% static 'styles/courses-header.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/general.css' %}"-->
+    
+</head>
+
+<body>
+
+    <div class="header">
+        <p>header</p>
+    </div>
+
+    <div class="main">
+
+        <div class="left">
+            <p>left</p>
+        </div>
+
+        <div class="right"> <!-- hier kommt die video und Kommentarfunktion rein-->
+            <p>test</p> 
+        </div>
+    </div>
+
+    <div class="container">
+        {% for x in video %}
+            <h3 class="text-center mt-2 mb-2">{{x.title}}</h3>
+            <video class="emded-responsive emded-responsive-16by9" controls="controls" width="320" height="240">
+                <source src="{{x.video.url}}" type="video/mp4"/>
+            </video>
+        {% endfor %}
+    </div>
+</body>
+</html>
