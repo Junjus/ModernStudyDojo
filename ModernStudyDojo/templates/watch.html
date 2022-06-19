@@ -11,21 +11,22 @@
 </head>
 
 <body>
-<!--div class="courses">
-    <div class="left">
-        <p>left</p>
+
+    <div class="header">
+        <p>header</p>
     </div>
 
     <div class="main">
-        <div class="header">
-            <p>header</p>
+
+        <div class="left">
+            <p>left</p>
         </div>
 
-        <div class="unten">
-            <p>unten</p>
+        <div class="right"> <!-- hier kommt die video und Kommentarfunktion rein-->
+            <p>test</p> 
         </div>
     </div>
-</div-->
+
     <div class="container">
         {% for x in video %}
             <h3 class="text-center mt-2 mb-2">{{x.title}}</h3>
@@ -34,7 +35,5 @@
             </video>
         {% endfor %}
     </div>
-
 </body>
-
 </html>

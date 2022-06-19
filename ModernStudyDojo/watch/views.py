@@ -1,6 +1,8 @@
+from multiprocessing import context
 from django.shortcuts import render
 from django.views.decorators.csrf import ensure_csrf_cookie
 from django.http import HttpResponseRedirect
+from django.contrib.auth.forms import UserCreationForm
 
 # Import Models
 from .forms import VideoForm
@@ -40,9 +42,12 @@ def uploadedSuccessfully(request):
     return render(request, "uploadedSuccessfully.html", {})
 
 
+
 def index(request, *args, **kwargs):
     return render(request, "index.html", {})
 
 
-def login(request, *args, **kwargs):
-    return render(request, "login.html", {})
+def login(request):
+    form = UserCreationForm()
+    context = {'form' : form}
+    return render(request, "login.html", context)
