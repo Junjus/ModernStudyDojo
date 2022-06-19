@@ -68,11 +68,10 @@
   font-size: 25px;
   font-family: "Work Sans", sans-serif;
   background-color:rgba(0, 214, 170, 0.85);
-  margin: 0;
   cursor:pointer;
-  float: left;
   height: 100%;
   width: 100%;
+  
 }
 
 .profile-picture{
@@ -94,7 +93,6 @@
   display: block;
 }
   
-
 .dropdown-content a {
   display: block;
   color: #000000;
