@@ -51,3 +51,6 @@ def login(request):
     form = UserCreationForm()
     context = {'form' : form}
     return render(request, "login.html", context)
+
+def register(request, *args, **kwargs):
+    return render(request, "register.html", {})
